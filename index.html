@@ -1,11 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mordecai.TM</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <canvas id="canvas"></canvas>
     <header>
@@ -17,67 +19,70 @@
             </ul>
         </nav>
     </header>
-    
+
     <section class="welcome" id="about">
-        <svg class="circuit-board" id="energy" width="100%">
-<path d="" stroke-width="2" stroke="#ff0" fill="none"></path>
-<path d="" stroke-width="2" stroke="#ff0" fill="none"></path>
-<path d="" stroke-width="2" stroke="#ff0" fill="none">
-    </path>
-        </svg>
+        
         <svg class="circuit-board" id="energy" width="100%">
             <path d="" stroke-width="2" stroke="#ff0" fill="none"></path>
             <path d="" stroke-width="2" stroke="#ff0" fill="none"></path>
             <path d="" stroke-width="2" stroke="#ff0" fill="none">
-                </path>
-                    </svg>
-                    <svg class="circuit-board" id="energy" width="100%">
-                        <path d="" stroke-width="2" stroke="#ff0" fill="none"></path>
-                        <path d="" stroke-width="2" stroke="#ff0" fill="none"></path>
-                        <path d="" stroke-width="2" stroke="#ff0" fill="none">
-                            </path>
-                                </svg>
-                                <svg class="circuit-board" id="energy" width="100%">
-                                    <path d="" stroke-width="2" stroke="#ff0" fill="none"></path>
-                                    <path d="" stroke-width="2" stroke="#ff0" fill="none"></path>
-                                    <path d="" stroke-width="2" stroke="#ff0" fill="none">
-                                        </path>
-                                            </svg>
-        <div class="container">  
-    <div class="portfolio-title">
-            <div class="img-ctn">
+            </path>
+        </svg>
+        <svg class="circuit-board" id="energy" width="100%">
+            <path d="" stroke-width="2" stroke="#ff0" fill="none"></path>
+            <path d="" stroke-width="2" stroke="#ff0" fill="none"></path>
+            <path d="" stroke-width="2" stroke="#ff0" fill="none"></path>
+        </svg>
+        <svg class="circuit-board" id="energy" width="100%">
+            <path d="" stroke-width="2" stroke="#ff0" fill="none"></path>
+            <path d="" stroke-width="2" stroke="#ff0" fill="none"></path>
+            <path d="" stroke-width="2" stroke="#ff0" fill="none"></path>
+        </svg>
+        <svg class="circuit-board" id="energy" width="100%">
+            <path d="" stroke-width="2" stroke="#ff0" fill="none"></path>
+            <path d="" stroke-width="2" stroke="#ff0" fill="none"></path>
+            <path d="" stroke-width="2" stroke="#ff0" fill="none"></path>
+        </svg>
+
+        <div class="container">
+            <div class="portfolio-title">
+                <div class="img-ctn">
                 </div>
                 <span class="id">
-                <span class="my-name"><h1>MORDECAI T.M</h1></span>
-                <hr>
-                <span class="my-title"><h1>Web developer</h1></span>
-            </span>
+                    <span class="my-name">
+                        <h1>MORDECAI T.M</h1>
+                    </span>
+                    <hr>
+                    <span class="my-title">
+                        <h1>Web developer</h1>
+                    </span>
+                </span>
             </div>
             <div class="about-me">
                 <button id="about-me">Details</Details></button>
                 <button id="preview">Preview</Details></button>
             </div>
         </div>
-        
+
         <div class="welcome-note">
             <h3 class="note" id="note"></h3>
             <script>
-            let i = 0;
+                let i = 0;
                 const welcomeNote = "Greetings and welcome to my portfolio. My name is Mordecai Thulani Makatini. The 'Details' button below will provide you with more information. The 'Preview' is a short presentation of my skill set and interest in Web development and software.";
                 let speed = 100;
                 function typeWrite() {
-                if (i < welcomeNote.length) 
-                    document.getElementById("note").innerHTML += welcomeNote.charAt(i);
-                i++;
-                setTimeout(typeWrite, speed);
-                
-            }
+                    if (i < welcomeNote.length)
+                        document.getElementById("note").innerHTML += welcomeNote.charAt(i);
+                    i++;
+                    setTimeout(typeWrite, speed);
 
-            typeWrite()
+                }
+
+                typeWrite()
 
             </script>
         </div>
-    <script src="svgCanvas.js"></script>
+        <script src="svgCanvas.js"></script>
 
     </section>
 
@@ -104,4 +109,5 @@
     </section>
     <section class="contact" id="contact"></section>
 </body>
+
 </html>
