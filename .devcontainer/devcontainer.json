@@ -1,5 +1,8 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "features": {
+     "ghcr.io/devcontainers-extra/features/live-server:1" : {
+       "version": "1.0.0"
+     } 
   }
 }
