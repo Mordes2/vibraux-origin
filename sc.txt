@@ -1,0 +1,45 @@
+const projex = document.querySelector(".projex");
+let projectCtn = document.querySelector(".project-ctn");
+const myProject = document.querySelector(".myProjects");
+const aboutMe = document.querySelector(".aboutMyself")
+const navList = document.querySelector(".nav-list");
+const listItem = document.querySelectorAll(".list-item");
+const projectLink = document.querySelectorAll(".projectLink");
+const projectContent = document.querySelectorAll(".projexContent");
+const projectType = document.querySelectorAll(".project-type");
+
+
+const colors = ["#00beef", "#00aa88", "#aa00ff", "#ffaa00", "#000"];
+
+function openType(type, elmnt) {
+    // Hide all elements with class="tabcontent" by default */
+    for ( let i = 0; i < projectContent.length; i++) {
+      projectContent[i].style.display = "none";
+    }
+  
+    // Remove the background color of all tablinks/buttons
+    for (i = 0; i < projectLink.length; i++) {
+      projectLink[i].style.backgroundColor = "";
+    }
+  
+    document.getElementById(type).style.display = "grid";
+    
+    // Add the specific color to the button used to open the tab content
+    elmnt.style.backgroundColor = "transparent";
+}
+  
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+for (let i = 0; i < colors.length; i++) {
+  projectLink[i].addEventListener("click", () => {
+  
+     projex.style.background = `linear-gradient(${colors[i]}, #000, ${colors[i]})`;
+    
+    if (i === colors.length - 1)
+      projectCtn.style.boxShadow = `0 0 4px 1px ${colors[0]}`;
+      projex.style.background = `linear-gradient(#000, ${colors[0]}, #000)`;
+      navList.style.boxShadow = `0 0 2px ${colors[0]}`;
+  
+  });
+}
+  
