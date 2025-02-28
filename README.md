@@ -1,2 +1,3 @@
-#MORDECAI 
-##Web Development Portfolio
+# Mordecai T.M
+## Web developer portfolio
+
