@@ -583,7 +583,7 @@ border-radius: 5px;
     width: 50px;
     height: 50px;
     padding: 8px;
-    background: rgb(255 55 0 / 60%);
+    background: transparent;
     border-radius: 0 10px 10px 0;
     padding-right: 15px;
     cursor: pointer;
@@ -598,7 +598,7 @@ border-radius: 5px;
     width: 50px;
     height: 50px;
     right: 0;
-    background: rgb(255 55 0 / 60%);
+    background: transparent;
     padding: 8px;
     border-radius: 10px 0 0 10px;
     padding-left: 15px;
@@ -628,12 +628,14 @@ border-radius: 5px;
 }
 .next:active {
     filter: invert(0);
-    background: #0aa;
+    background:none;
+    scale: 1.1;
     box-shadow: 0 0 4px 2px #fff;
 }
 .prev:active {
     filter: invert(0);
-    background: #0aa;
+    background: none;
+    scale: 1.1;
     box-shadow: 0 0 4px 2px #fff;
 }
 .status {
